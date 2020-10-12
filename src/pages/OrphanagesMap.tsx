@@ -9,6 +9,7 @@ import '../styles/pages/orphanages-map.css';
 import 'leaflet/dist/leaflet.css';
 
 function OrphanagesMap() {
+  console.log(process.env.REACT_APP_MAPBOX_TOKEN)
   return (
     <div id="page-map">
       <aside>
@@ -29,7 +30,8 @@ function OrphanagesMap() {
         zoom={15}
         style={{ width: '100%', height: '100%' }}
       > 
-        <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
+        <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} />
       </Map>
 
       <Link to='' className="create-orphanage">
