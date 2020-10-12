@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import mapMarkerImg from '../images/map-maker.svg'
 
+import '../styles/pages/orphanages-map.css'
+
 function OrphanagesMap() {
   return (
     <div id="page-map">
@@ -11,8 +13,8 @@ function OrphanagesMap() {
         <header>
           <img src={mapMarkerImg} alt="mapMarker"/>
 
-          <h2>Escolha um orfanato</h2>
-          <p>Muitas crianças estão esperando a sua visita</p>
+          <h2>Escolha um orfanato no mapa</h2>
+          <p>Muitas crianças estão esperando a sua visita :)</p>
         </header>
         <footer>
           <strong>Bragança Paulista</strong>
