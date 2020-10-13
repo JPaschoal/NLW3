@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import { getRepository } from 'typeorm';
-import Orphanage from '../models/Orphanege';
+import Orphanage from '../models/Orphanage';
 
 export default {
   async index(request: Request, response: Response){
