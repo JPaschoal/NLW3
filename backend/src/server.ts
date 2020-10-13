@@ -1,9 +1,8 @@
 import express from 'express';
 import { getRepository } from 'typeorm';
-import orphanages from './models/Orphanege';
+import Orphanage from './models/Orphanege';
 
 import './database/connection';
-import Orphanage from './models/Orphanege';
 
 const app = express();
 
@@ -34,7 +33,7 @@ app.post('/orphanages', async(request, response) => {
 
   await orphanagesRepository.save(orphanage)
 
-  return response.json({message: 'Hello World'})
+  return response.json(orphanage)
 })
 
 app.listen(3333);
