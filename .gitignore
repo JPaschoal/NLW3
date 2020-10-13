@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# IMGs
+/backend/uploads
+/backend/database/database.sqlite
+
 # testing
 /coverage
 
@@ -22,3 +26,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+backend/src/database/datebase.sqlite
