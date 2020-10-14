@@ -5,7 +5,7 @@ import { Map, Marker, TileLayer } from "react-leaflet";
 import { useHistory } from 'react-router-dom';
 import L from 'leaflet';
 
-import mapMarkerImg from '../images/map-marker.svg';
+import mapMarkerImg from '../images/map-maker.svg';
 
 import '../styles/pages/orphanage.css';
 
@@ -79,7 +79,7 @@ export default function Orphanage() {
               </Map>
 
               <footer>
-                <a href="">Ver rotas no Google Maps</a>
+                <a href="/">Ver rotas no Google Maps</a>
               </footer>
             </div>
 
