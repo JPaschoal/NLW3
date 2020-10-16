@@ -36,7 +36,8 @@ export default function OrphanageData() {
       opening_hours,
       open_on_weekends,
       latitude,
-      longitude
+      longitude,
+      images
     });
 
     const data = new FormData();
@@ -45,7 +46,7 @@ export default function OrphanageData() {
     data.append('about', about);
     data.append('latitude', String(latitude));
     data.append('longitude', String(longitude));
-    data.append('instruction', instruction);
+    data.append('instructions', instruction);
     data.append('opening_hours', opening_hours);
     data.append('open_on_weekends', String(open_on_weekends));
 
